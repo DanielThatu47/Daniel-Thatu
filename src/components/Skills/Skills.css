@@ -1,0 +1,185 @@
+.skills {
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 72%;
+    margin: 0 auto;
+    animation: fadeInup 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skillsheading {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 32px;
+  }
+  
+  .program {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 10px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .skill-card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+    padding: 20px;
+  }
+  
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .language {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 50%;
+  }
+
+  .language:hover {
+    color: yellow;
+  }
+  
+  .mongodb-icon {
+    color: gray; /* Default color */
+    background-color: #1D1D1D;
+  }
+  .bootstrap-icon{
+    color: white;
+    background-color: #1D1D1D;
+  }
+
+  .bootstrap-icon:hover{
+    fill: yellow;
+  }
+
+  .mongodb-icon:hover {
+    fill: yellow; /* Hover color */
+  }
+
+  .firebase-icon{
+    background-color: #1D1D1D;
+  }
+
+  .firebase-icon:hover {
+    fill: yellow; /* Hover color */
+  }
+
+  
+  .sql-icon{
+    background-color: #1D1D1D;
+  }
+
+  .sql-icon:hover {
+    fill: yellow; /* Hover color */
+  }
+
+  .django-icon{
+    background-color: #1D1D1D;
+  }
+
+  .django-icon:hover {
+    fill: yellow; /* Hover color */
+  }
+
+  .flask-icon{
+    background-color: #1D1D1D;
+  }
+
+  .flask-icon:hover {
+    fill: yellow; /* Hover color */
+  }
+
+  .language-name {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .frame {
+    font-size: 28px;
+  }
+  
+.database{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.tool{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+  @media (max-width: 768px) {
+    .skills {
+      background-color: #1D1D1D;
+      padding: 10px;
+      border-radius: 15px;
+      animation: fadeInUp 1s ease-in-out;
+      overflow: hidden; /* Prevent content from overflowing */
+      margin: 0 10px;
+      width: 99%;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .languages {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .language {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .skill-card {
+      margin: 10px auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .language-name {
+      font-size: 14px;
+    }
+  }
+  
+  

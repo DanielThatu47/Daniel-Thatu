@@ -1,0 +1,129 @@
+/* Custom CSS for Education Component */
+.education-section {
+    background-color: #1D1D1D;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    overflow: hidden; /* Prevent content from overflowing */
+    width: 77%;
+  }
+  
+  .education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: auto auto; /* Two rows, first row auto height, second row auto height */
+    align-items: start; /* Align items at the top */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .eduhead{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+  .education-image img {
+    
+    max-width: 150px; /* Adjust the image width as needed */
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .education-text {
+    color: #ffffff;
+  }
+  
+  .education-text h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+  
+  .education-text p {
+    margin: 5px 0;
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .education-container {
+      display: grid;
+      grid-template-columns: 1fr ; /* Two columns of equal width */
+      grid-template-rows: auto auto; /* Two rows, first row auto height, second row auto height */
+      align-items: start; /* Align items at the top */
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .education-image img {
+      max-width: 100px; /* Adjust the image width as needed */
+      height: 100px;
+      margin-right: 10px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    .education-section {
+      background-color: #1D1D1D;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin: 0 12px;
+      animation: fadeInUp 1s ease-in-out;
+      overflow: hidden; /* Prevent content from overflowing */
+      width: 94%;
+    }
+    .education-text{
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+    .eduhead{
+      text-align: center;
+      margin-left: 35px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 980px){
+    .education-container {
+      display: grid;
+      grid-template-columns: 1fr ; /* Two columns of equal width */
+      grid-template-rows: auto auto; /* Two rows, first row auto height, second row auto height */
+      align-items: start; /* Align items at the top */
+      text-align: center;
+      margin-top: 20px;
+      padding: 30px;
+    }
+
+    .education-image img {
+      max-width: 250px; /* Adjust the image width as needed */
+      height: 250px;
+      margin-right: 10px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    .education-section {
+      background-color: #1D1D1D;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin: 0 12px;
+      animation: fadeInUp 1s ease-in-out;
+      overflow: hidden; /* Prevent content from overflowing */
+      width: 94%;
+    }
+    .education-text{
+      display: flex;
+      flex-direction: column;
+      font-size: 3rem;
+    }
+    .eduhead{
+      text-align: center;
+      margin-left: 35px;
+      font-size: 4rem;
+    }
+
+  }

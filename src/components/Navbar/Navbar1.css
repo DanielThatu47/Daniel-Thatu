@@ -1,0 +1,119 @@
+.navbar {
+  background-color: #000000;
+  padding: 1rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  display: none; /* Hide toggler by default */
+  background-color:  transparent;
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.navbar-toggler:hover {
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row; /* Ensure links are in a row */
+  justify-content: flex-start; /* Align links to the right */
+}
+
+.navbar-collapse.show {
+  display: flex;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+}
+
+.nav-link:hover {
+  color: #dddddd;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; /* Show toggler on small screens */
+    position: absolute;
+    
+    right: 19px;
+    top: 0.5rem; /* Adjust position to align with brand */
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #000000; /* Background color for collapsed menu */
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    z-index: 999; /* Ensure it's above navbar */
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem; /* Add padding for spacing */
+  }
+
+  .navbar-brand {
+    margin-right: auto; /* Push toggler to the right */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-link {
+    padding: 1rem; /* Adjust padding for better touch area */
+    text-align: center;
+  }
+}
+
+

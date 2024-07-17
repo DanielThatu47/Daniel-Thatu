@@ -1,0 +1,44 @@
+import React, { useState, useEffect } from 'react';
+import './About.css';
+import Me from './Me.webp';
+
+const About = () => {
+  const [typedText, setTypedText] = useState("");
+  const text = " 'I'm a passionate developer currently pursuing B.E in Information Technology from St Francis Institute of Technology. I have experience in various programming languages and frameworks, and I enjoy building projects that solve real-world problems.";
+
+  useEffect(() => {
+    let index = 0;
+    const speed = 28; // Typing speed in milliseconds
+
+    const timer = setInterval(() => {
+      if (index < text.length) {
+        setTypedText(prevTypedText => prevTypedText + text.charAt(index));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, speed);
+
+    // Clean up the interval when component unmounts or on re-render
+    return () => clearInterval(timer);
+  }, []); // Empty dependency array to run effect only once on mount
+
+  return (
+    <section id="about">
+      <div className="about-container">
+        <div className="about-image">
+          <img src={Me} alt="Daniel Thatu" />
+        </div>
+        <div className='intro animation'>
+          <h1><i>Hi I am <span className='daniel'> <strong>Daniel Thatu</strong> </span> A WEB DEVELOPER with 2 years of experience of Building Projects With Different Tech Stacks</i></h1>
+        </div>
+        <div className="about-content">
+          <h2>About Me</h2>
+          <p className="typewriter">{typedText}</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

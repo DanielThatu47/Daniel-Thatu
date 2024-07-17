@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar1';
+import Education from './components/Education/Education';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Achievements from './components/Achievements/Achievements';
+import Certifications from './components/Certification/Certifications';
+import Footer from './components/Footer/Footer';
+import './style.css';
+import About from './components/About/About';
+import { Element } from 'react-scroll';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div>
+    <Navbar />
+    <Element name="about">
+    <div id="about">
+      <About />
     </div>
-  );
-}
+    </Element>
+
+    <Element name="Education">
+    <div id="education">
+      <Education />
+    </div>
+    </Element>
+
+    <Element name="skills">
+    <div id="skills">
+      <Skills />
+    </div>
+    </Element>
+    <div id="projects">
+      <Projects />
+    </div>
+    <div id="achievements">
+      <Achievements />
+    </div>
+    <div id="certifications">
+      <Certifications />
+    </div>
+    <div id="contact">
+      <Footer />
+    </div>
+  
+  </div>
+  
+);
 
 export default App;
