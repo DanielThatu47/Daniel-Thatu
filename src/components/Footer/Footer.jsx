@@ -81,7 +81,7 @@ const Footer = () => {
           <div className="popup-content">
             <span className="close" onClick={closePopup}>&times;</span>
             <p>Submitted successfully</p>
-            <p className="popup-note"><span style={{color:'red'}}>Note:</span> You have to refresh the page to submit the form again.</p>
+            <p className="popup-note"><span style={{color:'red'}}>Note :</span> You have to refresh the page to submit the form again.</p>
             <button onClick={closePopup}>OK</button>
           </div>
         </div>
