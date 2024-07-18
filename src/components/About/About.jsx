@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './About.css';
 import Me from './Me.webp';
 import Pdf from './Resume5.pdf';
-import  CIcon  from '@coreui/icons-react';
-import {cilCloudDownload}  from '@coreui/icons';
+import CIcon from '@coreui/icons-react';
+import { cilCloudDownload } from '@coreui/icons';
 
 const About = () => {
   const [typedText, setTypedText] = useState("");
@@ -48,7 +48,7 @@ const About = () => {
           <div className="resume-content">
             <button className="close-button" onClick={() => setShowResume(false)}>X</button>
             <iframe src={Pdf} title="Resume" className="resume-iframe"></iframe>
-            <a href={pdf} download className="download-button">
+            <a href={Pdf} download className="download-button">
               <CIcon icon={cilCloudDownload} size="xl" />
             </a>
           </div>
