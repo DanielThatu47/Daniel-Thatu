@@ -48,9 +48,11 @@ const About = () => {
           <div className="resume-content">
             <button className="close-button" onClick={() => setShowResume(false)}>X</button>
             <iframe src={Pdf} title="Resume" className="resume-iframe"></iframe>
-            <a href={Pdf} download className="download-button">
-              <CIcon icon={cilCloudDownload} size="xl" />
-            </a>
+            <div className="download-link-container">
+              <a href={Pdf} download className="download-button">
+                <CIcon icon={cilCloudDownload} size="xl" /> Download PDF
+              </a>
+            </div>
           </div>
         </div>
       )}
