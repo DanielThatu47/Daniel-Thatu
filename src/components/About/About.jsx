@@ -4,6 +4,7 @@ import Me from './Me.webp';
 import Pdf from './Resume5.pdf';
 import Preview from './Preview.jpg';
 import CIcon from '@coreui/icons-react';
+import {cilX} from '@coreui/icons';
 import { cilCloudDownload } from '@coreui/icons';
 
 const About = () => {
