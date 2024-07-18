@@ -46,8 +46,8 @@ const About = () => {
         <div className="resume-popup">
           <div className="resume-content">
             <button className="close-button" onClick={() => setShowResume(false)}>X</button>
-            <iframe src="Daniel Thatu(Resume)-1.pdf" title="Resume" className="resume-iframe"></iframe>
-            <a href="Daniel Thatu(Resume)-1.pdf" download className="download-button">
+            <iframe src="./Daniel Thatu(Resume)-1.pdf" title="Resume" className="resume-iframe"></iframe>
+            <a href="./Daniel Thatu(Resume)-1.pdf" download className="download-button">
               <CIcon icon={cilCloudDownload} size="xl" />
             </a>
           </div>
