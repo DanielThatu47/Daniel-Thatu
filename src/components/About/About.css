@@ -120,20 +120,20 @@ h1 {
 }
 
 .download-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  background: #007bff;
-  color: white;
+  background: #ffdd57;
+  color: #1D1D1D;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   transition: background 0.3s;
 }
 
 .download-button:hover {
-  background: #0056b3;
+  background: #e6c84f;
 }
 
 
