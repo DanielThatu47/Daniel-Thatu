@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './About.css';
 import Me from './Me.webp';
 import Pdf from './Resume5.pdf';
-import Preview from './Preview.jpg'
 import CIcon from '@coreui/icons-react';
 import { cilCloudDownload } from '@coreui/icons';
+import { pdfjs } from 'pdfjs-dist';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const About = () => {
   const [typedText, setTypedText] = useState("");
   const [showResume, setShowResume] = useState(false);
+  const pdfContainerRef = useRef(null);
   const text = " 'I'm a passionate developer currently pursuing B.E in Information Technology from St Francis Institute of Technology. I have experience in various programming languages and frameworks, and I enjoy building projects that solve real-world problems.";
 
   useEffect(() => {
@@ -24,9 +27,32 @@ const About = () => {
       }
     }, speed);
 
-    // Clean up the interval when component unmounts or on re-render
     return () => clearInterval(timer);
   }, []); // Empty dependency array to run effect only once on mount
+
+  useEffect(() => {
+    if (showResume) {
+      const loadPdf = async () => {
+        const pdf = await pdfjs.getDocument(Pdf).promise;
+        const page = await pdf.getPage(1);
+        const viewport = page.getViewport({ scale: 1.5 });
+
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        await page.render({ canvasContext: context, viewport }).promise;
+
+        if (pdfContainerRef.current) {
+          pdfContainerRef.current.innerHTML = '';
+          pdfContainerRef.current.appendChild(canvas);
+        }
+      };
+
+      loadPdf();
+    }
+  }, [showResume]);
 
   return (
     <section id="about">
@@ -48,7 +74,7 @@ const About = () => {
         <div className="resume-popup">
           <div className="resume-content">
             <button className="close-button" onClick={() => setShowResume(false)}>X</button>
-            <iframe src={Preview} title="Resume" className="resume-iframe"></iframe>
+            <div ref={pdfContainerRef} className="pdf-container"></div>
             <div className="download-link-container">
               <a href={Pdf} download className="download-button">
                 <CIcon icon={cilCloudDownload} size="xl" /> Download PDF
