@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './About.css';
 import Me from './Me.webp';
 import Pdf from './Resume5.pdf';
+import Preview from './Preview.jpg'
 import CIcon from '@coreui/icons-react';
 import { cilCloudDownload } from '@coreui/icons';
 
@@ -47,7 +48,7 @@ const About = () => {
         <div className="resume-popup">
           <div className="resume-content">
             <button className="close-button" onClick={() => setShowResume(false)}>X</button>
-            <iframe src={Pdf} title="Resume" className="resume-iframe"></iframe>
+            <iframe src={Preview} title="Resume" className="resume-iframe"></iframe>
             <div className="download-link-container">
               <a href={Pdf} download className="download-button">
                 <CIcon icon={cilCloudDownload} size="xl" /> Download PDF
