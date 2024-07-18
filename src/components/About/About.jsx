@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
 import Me from './Me.webp';
-import Pdf from './Resume(Daniel).pdf';
+import Pdf from './Resume5.pdf';
 import  CIcon  from '@coreui/icons-react';
 import {cilCloudDownload}  from '@coreui/icons';
 
