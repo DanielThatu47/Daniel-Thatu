@@ -4,7 +4,7 @@ import Me from './Me.webp';
 import Pdf from './Resume5.pdf';
 import Preview from './Preview.jpg';
 import CIcon from '@coreui/icons-react';
-import {cilX} from '@coreui/icons';
+import {cisX} from '@coreui/icons';
 import { cilCloudDownload } from '@coreui/icons';
 
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
       {showResume && (
         <div className="resume-popup">
           <div className="resume-content">
-            <CIcon icon={cilX}className="close-button" onClick={() => setShowResume(false)}/>
+            <CIcon icon={cisX}className="close-button" onClick={() => setShowResume(false)}/>
 
             <img src={Preview} alt="Resume Preview" className="resume-preview" />
             <div className="download-link-container">
