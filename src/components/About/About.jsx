@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './About.css';
 import Me from './Me.webp';
 import  CIcon  from '@coreui/icons-react';
-import cilCloudDownload  from '@coreui/icons';
+import {cilCloudDownload}  from '@coreui/icons';
 
 const About = () => {
   const [typedText, setTypedText] = useState("");
