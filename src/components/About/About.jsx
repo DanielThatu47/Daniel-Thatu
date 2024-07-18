@@ -46,7 +46,8 @@ const About = () => {
       {showResume && (
         <div className="resume-popup">
           <div className="resume-content">
-            <button className="close-button" onClick={() => setShowResume(false)}>X</button>
+            <CIcon icon={cilX}className="close-button" onClick={() => setShowResume(false)}/>
+
             <img src={Preview} alt="Resume Preview" className="resume-preview" />
             <div className="download-link-container">
               <a href={Pdf} download className="download-button">
