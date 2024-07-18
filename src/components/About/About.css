@@ -111,9 +111,9 @@ h1 {
   cursor: pointer;
 }
 
-.pdf-container {
+.resume-preview {
   width: 100%;
-  text-align: center;
+  height: auto;
 }
 
 .download-link-container {
