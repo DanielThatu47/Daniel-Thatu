@@ -80,10 +80,10 @@ const Footer = () => {
       <p>Phone: <a href="tel:+919730728411">+91 9730728411</a></p>
       <div className="social-links">
         <a href="https://github.com/DanielThatu47/" target="_blank" rel="noopener noreferrer">
-          <CIcon icon={cibGithub} size="xl" />
+          <CIcon icon={cibGithub} size="xl" fill="white" className="github"/>
         </a>
         <a href="https://www.linkedin.com/in/daniel-thatu-32933322a/" target="_blank" rel="noopener noreferrer">
-          <CIcon icon={cibLinkedin} size="xl" />
+          <CIcon icon={cibLinkedin} size="xl" fill="white" className="linkedin" />
         </a>
       </div>
       {showPopup && (
