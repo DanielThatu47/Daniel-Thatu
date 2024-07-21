@@ -169,6 +169,13 @@ input:disabled, textarea:disabled, button:disabled {
   color: #ffcc00;
 }
 
+.gihtub:hover{
+    color:yellow;
+}
+.linkedin:hover{
+    color:yellow;
+}
+
 /* Responsive styling */
 @media (max-width: 600px) {
   footer {
