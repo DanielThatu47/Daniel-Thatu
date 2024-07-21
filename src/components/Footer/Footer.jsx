@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { CIcon } from '@coreui/icons-react';
+import { cibGithub, cibLinkedin } from '@coreui/icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -76,6 +78,14 @@ const Footer = () => {
       </form>
       <p>Email: <a href="mailto:danielthatu10@gmail.com">danielthatu10@gmail.com</a></p>
       <p>Phone: <a href="tel:+919730728411">+91 9730728411</a></p>
+      <div className="social-links">
+        <a href="https://github.com/DanielThatu47/" target="_blank" rel="noopener noreferrer">
+          <CIcon icon={cibGithub} size="xl" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-thatu-32933322a/" target="_blank" rel="noopener noreferrer">
+          <CIcon icon={cibLinkedin} size="xl" />
+        </a>
+      </div>
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
