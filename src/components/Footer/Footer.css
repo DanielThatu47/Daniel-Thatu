@@ -181,10 +181,10 @@ input:disabled, textarea:disabled, button:disabled {
   }
 
   .social-links {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .social-links a {
-    margin: 10px 0;
+    margin: 0 10px ;
   }
 }
