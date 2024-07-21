@@ -27,12 +27,12 @@ const Footer = () => {
     setIsSubmitting(true);
     emailjs.sendForm('service_111gmjp', 'template_uytcgid', e.target, 'p0iYy39Azlo3tkdQk')
       .then((result) => {
-          console.log(result.text);
-          setShowPopup(true);
-          setIsSubmitted(true);
+        console.log(result.text);
+        setShowPopup(true);
+        setIsSubmitted(true);
       }, (error) => {
-          console.log(error.text);
-          alert("An error occurred. Please try again.");
+        console.log(error.text);
+        alert("An error occurred. Please try again.");
       })
       .finally(() => {
         setIsSubmitting(false);
@@ -78,20 +78,26 @@ const Footer = () => {
       </form>
       <p>Email: <a href="mailto:danielthatu10@gmail.com">danielthatu10@gmail.com</a></p>
       <p>Phone: <a href="tel:+919730728411">+91 9730728411</a></p>
+      <h3>Follow Me On: </h3>
       <div className="social-links">
-        <a href="https://github.com/DanielThatu47/" target="_blank" rel="noopener noreferrer">
-          <CIcon icon={cibGithub} size="xl" fill="white" className="github"/>
-        </a>
-        <a href="https://www.linkedin.com/in/daniel-thatu-32933322a/" target="_blank" rel="noopener noreferrer">
-          <CIcon icon={cibLinkedin} size="xl" fill="white" className="linkedin" />
-        </a>
-      </div>
+        <div className="github-icon">
+          <a href="https://github.com/DanielThatu47/" target="_blank" rel="noopener noreferrer">
+            <div className="log0"><CIcon icon={cibGithub} id='two'  fill="white" className="github" />Github</div>
+          </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/daniel-thatu-32933322a/" target="_blank" rel="noopener noreferrer">
+              <div className="logo"><CIcon icon={cibLinkedin} id='one'  fill="white" className="linkedin" />Linkedin</div>
+            </a>
+          </div>
+        </div>
+    
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
             <span className="close" onClick={closePopup}>&times;</span>
             <p>Submitted successfully</p>
-            <p className="popup-note"><span style={{color:'red'}}>Note :</span> You have to refresh the page to submit the form again.</p>
+            <p className="popup-note"><span style={{ color: 'red' }}>Note :</span> You have to refresh the page to submit the form again.</p>
             <button onClick={closePopup}>OK</button>
           </div>
         </div>
