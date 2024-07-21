@@ -1,210 +1,230 @@
 footer {
-    text-align: center;
-    background-color: #000000;
-    color: #fff;
-    padding: 40px 20px;
-    position: static;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease-in-out;
-    top: 20%;
-    margin-top: 20px;
-  }
-  
-  footer h2 {
-    color: #ffdd57;
-  }
-  
-  footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  footer form input,
-  footer form textarea {
-    width: 80%;
-    max-width: 500px;
-    padding: 15px; /* Increased padding for a more modern look */
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; /* Smooth transition for hover and focus */
-    font-size: 1em; /* Increase font size for better readability */
-    background-color: #f9f9f9; /* Subtle background color */
-  }
-  
-  footer form input:focus,
-  footer form textarea:focus {
-    border-color: #0073e6; /* Change border color on focus */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on focus */
-    background-color: #fff; /* Change background color on focus */
-  }
-  
-  footer form button {
-    padding: 15px 25px; /* Increased padding for a more modern look */
-    background-color: #ffdd57;
-    border: none;
-    border-radius: 8px; /* More rounded corners */
-    cursor: pointer;
-    color: #000000;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    animation: fadeIn 1s ease-in-out;
-    font-size: 1em; /* Increase font size for better readability */
-  }
-  
-  footer form button:hover {
-    background-color: #ffcc00;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  }
-  
-  footer a {
-    color: #ffdd57;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Popup Styling */
-  .popup {
-    position: fixed; /* Fixed position to overlay on the screen */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the viewport */
-    height: 100%; /* Full height of the viewport */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 1001; /* Ensure it's above other content */
-  }
-  
-  .popup-content {
-    position: relative; /* Ensure content stays within the popup */
-    background-color: #fff;
-    padding: 40px; /* Reduced padding to maintain consistency */
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(112, 108, 108, 0.1);
-    animation: fadeIn 0.2s ease-in-out;
-  }
-  
-  .popup-content .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #888; /* Adjust color for visibility */
-  }
-  
-  .popup-content .close:hover {
-    color: #333; /* Darker color on hover */
-  }
-  
-  .popup-content p {
-    margin: 0;
-    font-size: 1.2em;
-    color: #0073e6;
-  }
-  
- /* Existing styles */
-
-/* Styles for the popup OK button */
-.popup-content button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+  top: 20%;
+  margin-top: 20px;
 }
 
-.popup-content button:hover {
-  background-color: #45a049;
+footer h2 {
+  color: #ffdd57;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+footer form input,
+footer form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 15px; /* Increased padding for a more modern look */
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for hover and focus */
+  font-size: 1em; /* Increase font size for better readability */
+  background-color: #f9f9f9; /* Subtle background color */
+}
+
+footer form input:focus,
+footer form textarea:focus {
+  border-color: #0073e6; /* Change border color on focus */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on focus */
+  background-color: #fff; /* Change background color on focus */
+}
+
+footer form button {
+  padding: 15px 25px; /* Increased padding for a more modern look */
+  background-color: #ffdd57;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+  font-size: 1em; /* Increase font size for better readability */
+}
+
+footer form button:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Popup Styling */
+.popup {
+  position: fixed; /* Fixed position to overlay on the screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1001; /* Ensure it's above other content */
+}
+
+.popup-content {
+  position: relative; /* Ensure content stays within the popup */
+  background-color: #fff;
+  padding: 40px; /* Reduced padding to maintain consistency */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(112, 108, 108, 0.1);
+  animation: fadeIn 0.2s ease-in-out;
 }
 
 .popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
   cursor: pointer;
+  color: #888; /* Adjust color for visibility */
+}
+
+.popup-content .close:hover {
+  color: #333; /* Darker color on hover */
+}
+
+.popup-content p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0073e6;
+}
+
+/* Existing styles */
+
+/* Styles for the popup OK button */
+.popup-content button {
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.popup-content button:hover {
+background-color: #45a049;
+}
+
+.popup-content .close {
+cursor: pointer;
 }
 
 /* Styles for disabled form elements */
 input:disabled, textarea:disabled, button:disabled {
-  background-color: #e0e0e0;
-  cursor: not-allowed;
+background-color: #e0e0e0;
+cursor: not-allowed;
 }
 
 /* Additional styles for popup note */
 .popup-note {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #fff3cd;
-  border: 1px solid #ffeeba;
-  color: #856404;
-  border-radius: 5px;
-  font-size: 14px;
+margin-top: 15px;
+padding: 10px;
+background-color: #fff3cd;
+border: 1px solid #ffeeba;
+color: #856404;
+border-radius: 5px;
+font-size: 14px;
 }
 
 /* Social links styling */
 .social-links {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 0 auto;
 }
 
+
 .social-links a {
-  margin: 0 10px;
-  color: #ffdd57;
+  margin: 0 auto;
   transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #ffcc00;
+.logo{
+ text-align: center;
+}
+.github,
+.linkedin {
+  transition: fill 0.3s ease;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #1d1d1d;
 }
 
-.github{
-color:white;
-background-color:gray;
+#one{
+  padding: 20px;
 }
-
-.gihtub:hover{
-    fill:yellow;
+#two{
+  padding: 26px;
 }
-
-.linkdein{
-color:white;
-background-color:gray;
+.github:hover,
+.linkedin:hover {
+  fill: yellow;
 }
 
 
- 
-.linkedin:hover{
-    fill:yellow;
-}
 
 /* Responsive styling */
 @media (max-width: 600px) {
-  footer {
-    padding: 20px 10px;
-  }
+footer {
+  padding: 20px 10px;
+}
 
-  footer form input,
-  footer form textarea {
-    width: 90%;
-  }
+footer form input,
+footer form textarea {
+  width: 90%;
+}
 
-  .social-links {
-    flex-direction: row;
-  }
+.social-links {
+  flex-direction: row;
+}
 
-  .social-links a {
-    margin: 0 10px ;
-  }
+.social-links a {
+  margin: 0 10px ;
+}
+
+.github,
+.linkedin {
+  transition: fill 0.3s ease;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+}
+
+#one{
+  padding: 10px;
+}
+#two{
+  padding: 17px;
+}
+.github:hover,
+.linkedin:hover {
+  fill: yellow;
+}
+
 }
