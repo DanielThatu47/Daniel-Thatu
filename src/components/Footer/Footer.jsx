@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { CIcon } from '@coreui/icons-react';
+import CIcon from '@coreui/icons-react';
 import { cibGithub, cibLinkedin } from '@coreui/icons';
 import './Footer.css';
 
