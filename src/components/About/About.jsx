@@ -28,11 +28,18 @@ const About = () => {
     return () => clearInterval(timer);
   }, []); // Empty dependency array to run effect only once on mount
 
+const handleImageContextMenu = (event) => {
+    event.preventDefault();
+  };
+
+
   return (
     <section id="about">
       <div className="about-container">
         <div className="about-image">
-          <img src={Me} alt="Daniel Thatu" />
+          <img src={Me} alt="Daniel Thatu"
+onContextMenu={handleImageContextMenu}
+ />
           <button className="resume-button" onClick={() => setShowResume(true)}>View Resume</button>
         </div>
         <div className='intro animation'>
@@ -49,7 +56,7 @@ const About = () => {
           <div className="resume-content">
             <CIcon icon={cilX}className="close-button" onClick={() => setShowResume(false)}/>
 
-            <img src={Preview} alt="Resume Preview" className="resume-preview" />
+            <img src={Preview} alt="Resume Preview" className="resume-preview" onContextMenu={handleImageContextMenu} />
             <div className="download-link-container">
               <a href={Pdf} download className="download-button">
                 <CIcon icon={cilCloudDownload} size="xl" /> Download PDF
