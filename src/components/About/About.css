@@ -89,8 +89,8 @@ h1 {
 
 .resume-content {
   position: relative;
-  width: 90%;
-  max-width: 90%;
+  width: 80%;
+  max-width: 800px; /* Set a maximum width for desktop view */
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -114,7 +114,8 @@ h1 {
 
 .resume-preview {
   width: 100%;
-  height: auto;
+  max-height: 80vh; /* Ensure the image does not exceed 80% of the viewport height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
 
 .download-link-container {
@@ -191,6 +192,10 @@ h1 {
   .resume-content {
     width: 90%;
     max-width: 90%;
+  }
+
+  .resume-preview {
+    max-height: 60vh; /* Adjust image height for smaller screens */
   }
 }
 
