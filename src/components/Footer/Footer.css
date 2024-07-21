@@ -169,11 +169,24 @@ input:disabled, textarea:disabled, button:disabled {
   color: #ffcc00;
 }
 
-.gihtub:hover{
-    color:yellow;
+.github{
+color:white;
+background-color:gray;
 }
+
+.gihtub:hover{
+    fill:yellow;
+}
+
+.linkdein{
+color:white;
+background-color:gray;
+}
+
+
+ 
 .linkedin:hover{
-    color:yellow;
+    fill:yellow;
 }
 
 /* Responsive styling */
