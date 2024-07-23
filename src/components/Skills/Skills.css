@@ -147,7 +147,6 @@
 
     .skills {
       background-color: #1D1D1D;
-      padding: 10px;
       border-radius: 15px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
