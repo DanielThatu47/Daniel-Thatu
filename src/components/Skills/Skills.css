@@ -141,15 +141,18 @@
     align-items: center;
     font-size: 28px;
 }
+
+
   @media (max-width: 768px) {
+
     .skills {
       background-color: #1D1D1D;
       padding: 10px;
       border-radius: 15px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
-      margin: 0 8px;
-      width: 99%;
+      margin: 0 auto;
+      width: 94%;
     }
   
     .skills-list {
