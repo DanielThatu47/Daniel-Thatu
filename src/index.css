@@ -1,6 +1,6 @@
 /* Reset CSS */
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
