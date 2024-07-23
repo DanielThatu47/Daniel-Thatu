@@ -148,7 +148,7 @@
       border-radius: 15px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
-      margin: 0 10px;
+      margin: 0 8px;
       width: 99%;
     }
   
