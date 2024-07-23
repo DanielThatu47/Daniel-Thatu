@@ -93,7 +93,7 @@ h1 {
   width: 80%;
   max-width: 800px; /* Set a maximum width for desktop view */
   background: #1D1D1D;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -143,6 +143,8 @@ h1 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+
   .about-container {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
     grid-template-rows: auto auto auto; /* Three rows for intro, image, and about me */
@@ -196,7 +198,7 @@ h1 {
   }
 
   .resume-preview {
-    max-height: 60vh; /* Adjust image height for smaller screens */
+    max-height: 80vh; /* Adjust image height for smaller screens */
   }
 }
 
