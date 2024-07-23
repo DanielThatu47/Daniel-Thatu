@@ -48,7 +48,8 @@ footer form button {
   padding: 15px 25px; /* Increased padding for a more modern look */
   background-color: #ffdd57;
   border: none;
-  border-radius: 8px; /* More rounded corners */
+  margin-top:20px;
+  border-radius: 10px; /* More rounded corners */
   cursor: pointer;
   color: #000000;
   font-weight: bold;
