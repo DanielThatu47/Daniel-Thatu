@@ -4,7 +4,6 @@
     padding: 20px;
     border-radius: 15px;
     margin-top: 20px;
-    
     animation: fadeInUp 1s ease-in-out;
     overflow: hidden; /* Prevent content from overflowing */
     width: 77%;
@@ -70,7 +69,7 @@
       padding: 20px;
       border-radius: 15px;
       margin-top: 20px;
-      margin:0 auto;
+      margin-left:7px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
       width: 94%;
