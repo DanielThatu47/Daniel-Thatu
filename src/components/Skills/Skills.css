@@ -148,10 +148,10 @@
     .skills {
       background-color: #1D1D1D;
       border-radius: 15px;
+      padding:20px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
-      margin-left:12px;
-      margin-right:12px;
+      margin:0 5px;
       width: 98%;
     }
   
