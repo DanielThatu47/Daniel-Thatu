@@ -6,7 +6,7 @@ import Preview from './Preview.jpg';
 import CIcon from '@coreui/icons-react';
 import { cilX, cilCloudDownload } from '@coreui/icons';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const About = () => {
   const [typedText, setTypedText] = useState("");
