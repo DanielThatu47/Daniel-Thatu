@@ -76,7 +76,7 @@ const Navbar1 = () => {
           </li>
         <li className="nav-item">
             <ScrollLink
-              to="certification"
+              to="certifications"
               smooth={true}
               duration={1500}
               className="nav-link"
@@ -84,7 +84,7 @@ const Navbar1 = () => {
               offset={-53}
 
             >
-              Certification 
+              Certifications 
             </ScrollLink>
           </li>
           <li className="nav-item">
