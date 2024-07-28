@@ -74,6 +74,19 @@ const Navbar1 = () => {
               Achievements
             </ScrollLink>
           </li>
+        <li className="nav-item">
+            <ScrollLink
+              to="certification"
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+              onClick={toggleNavbar}
+              offset={-53}
+
+            >
+              Certification 
+            </ScrollLink>
+          </li>
           <li className="nav-item">
             <ScrollLink
               to="contact"
