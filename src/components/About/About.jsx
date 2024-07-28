@@ -4,8 +4,9 @@ import Me from './Me.webp';
 import Pdf from './Daniel_Resume.pdf';
 import Preview from './Preview.jpg';
 import CIcon from '@coreui/icons-react';
-import {cilX} from '@coreui/icons';
-import { cilCloudDownload } from '@coreui/icons';
+import { cilX, cilCloudDownload } from '@coreui/icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const About = () => {
   const [typedText, setTypedText] = useState("");
@@ -28,18 +29,19 @@ const About = () => {
     return () => clearInterval(timer);
   }, []); // Empty dependency array to run effect only once on mount
 
-const handleImageContextMenu = (event) => {
+  const handleImageContextMenu = (event) => {
     event.preventDefault();
   };
 
+  const handleDownload = () => {
+    toast.success("PDF successfully downloaded!");
+  };
 
   return (
     <section id="about">
       <div className="about-container">
         <div className="about-image">
-          <img src={Me} alt="Daniel Thatu"
-onContextMenu={handleImageContextMenu}
- />
+          <img src={Me} alt="Daniel Thatu" onContextMenu={handleImageContextMenu} />
           <button className="resume-button" onClick={() => setShowResume(true)}>View Resume</button>
         </div>
         <div className='intro animation'>
@@ -54,17 +56,18 @@ onContextMenu={handleImageContextMenu}
       {showResume && (
         <div className="resume-popup">
           <div className="resume-content">
-            <CIcon icon={cilX}className="close-button" onClick={() => setShowResume(false)}/>
+            <CIcon icon={cilX} className="close-button" onClick={() => setShowResume(false)} />
 
             <img src={Preview} alt="Resume Preview" className="resume-preview" onContextMenu={handleImageContextMenu} />
             <div className="download-link-container">
-              <a href={Pdf} download className="download-button">
+              <a href={Pdf} download className="download-button" onClick={handleDownload}>
                 <CIcon icon={cilCloudDownload} size="xl" /> Download PDF
               </a>
             </div>
           </div>
         </div>
       )}
+      <ToastContainer />
     </section>
   );
 };
