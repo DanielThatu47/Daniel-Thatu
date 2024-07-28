@@ -83,7 +83,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:10px;
+  border-radius: 10px;
   z-index: 1000;
   overflow: auto;
 }
@@ -143,7 +143,6 @@ h1 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
 
   .about-container {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
@@ -223,4 +222,9 @@ h1 {
     opacity: 1;
     transform: translateX(0%);
   }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
