@@ -1,26 +1,21 @@
-import React, { useEffect } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useState, useEffect } from 'react';
+import NoInternetImage from './no internet.png'; // Adjust the path as needed
+import './NetworkStatus.css'; // Custom styles for the component
 
 const NetworkStatus = () => {
+  const [isOffline, setIsOffline] = useState(!navigator.onLine);
+
   useEffect(() => {
     const handleOnline = () => {
-      toast.dismiss();
-      toast.success("You are online", { autoClose: 3000 });
+      setIsOffline(false);
     };
 
     const handleOffline = () => {
-      toast.dismiss();
-      toast.error("You are offline", { autoClose: false });
+      setIsOffline(true);
     };
 
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
-
-    // Check initial status
-    if (!navigator.onLine) {
-      toast.error("You are offline", { autoClose: false });
-    }
 
     // Cleanup listeners on unmount
     return () => {
@@ -29,7 +24,16 @@ const NetworkStatus = () => {
     };
   }, []);
 
-  return <ToastContainer />;
+  if (isOffline) {
+    return (
+      <div className="network-status">
+        <img src={NoInternetImage} alt="No Internet Connection" />
+        <p>You are currently offline. Please check your internet connection.</p>
+      </div>
+    );
+  }
+
+  return null;
 };
 
 export default NetworkStatus;
