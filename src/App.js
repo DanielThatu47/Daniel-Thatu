@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 import './style.css';
 import About from './components/About/About';
 import { Element } from 'react-scroll';
-import NetworkStatus from './NetworkStatus';
+import NetworkStatus from './components/NetworkStatus/NetworkStatus';
 
 const App = () => (
 
