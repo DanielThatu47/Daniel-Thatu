@@ -14,7 +14,7 @@ import NetworkStatus from './components/NetworkStatus/NetworkStatus';
 const App = () => (
 
 <>
- <NetworkStatus />
+ <NetworkStatus>
   <div>
     <Navbar />
     <Element name="about">
@@ -48,6 +48,7 @@ const App = () => (
     </div>
   
   </div>
+</NetworkStatus>
 
 </>
 );
