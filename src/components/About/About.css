@@ -4,7 +4,8 @@ body {
 }
 
 section {
-margin:0 auto;
+margin-left:5%;
+margin-right:5%;
 margin-top: 64px;
 width: 100%;
 max-width: 1200px;
