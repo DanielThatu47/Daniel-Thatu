@@ -6,7 +6,7 @@ import Projects from './components/Projects/Projects';
 import Achievements from './components/Achievements/Achievements';
 import Certifications from './components/Certification/Certifications';
 import Footer from './components/Footer/Footer';
-import './style.css'
+import './style.css';
 import About from './components/About/About';
 import { Element } from 'react-scroll';
 import NetworkStatus from './components/NetworkStatus/NetworkStatus';
