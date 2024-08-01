@@ -173,7 +173,7 @@ h1 {
 @media (max-width: 768px) {
 
     section {
-    margin:0 auto;
+    margin-left:4px;
     margin-top: 64px;
     width: 100%;
     padding: 0;
