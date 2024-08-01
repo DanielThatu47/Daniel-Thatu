@@ -151,8 +151,8 @@
       padding:20px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
-      margin:0 4px;
-      width: 97%;
+      margin-left:7px;
+      width: 94%;
     }
   
     .skills-list {
