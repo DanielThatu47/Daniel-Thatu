@@ -16,5 +16,22 @@ module.exports = {
         },
       ],
     },
+     plugins: [
+    // Other plugins
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [{
+        urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'images',
+          expiration: {
+            maxEntries: 10,
+          },
+        },
+      }],
+    }),
+  ],
   };
   
