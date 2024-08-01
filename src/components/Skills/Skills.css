@@ -4,7 +4,7 @@
     border-radius: 15px;
     margin-top: 50px;
     width: 72%;
-    margin: 0 auto;
+    margin:0 auto;
     animation: fadeInup 1s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,8 @@
       padding:20px;
       animation: fadeInUp 1s ease-in-out;
       overflow: hidden; /* Prevent content from overflowing */
-      margin:0 5px;
+      margin-right:2%;
+      margin-left:2%;
       width: 98%;
     }
   
