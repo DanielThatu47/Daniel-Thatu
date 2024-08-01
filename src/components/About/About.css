@@ -172,6 +172,15 @@ h1 {
 /* Responsive Design */
 @media (max-width: 768px) {
 
+    section {
+    margin:0 auto;
+    margin-top: 64px;
+    width: 100%;
+    padding: 0;
+    animation: fadeInUp 1s ease-in-out;
+    justify-content: center;
+    }
+  
   .about-container {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
     grid-template-rows: auto auto auto; /* Three rows for intro, image, and about me */
