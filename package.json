@@ -57,7 +57,7 @@
       "last 1 safari version"
     ],
     "devDependencies": {
-    "workbox-webpack-plugin": "^7.0.0" // The version may vary; use the latest stable version
+    "workbox-webpack-plugin": "^7.0.0"
   },
   }
 }
