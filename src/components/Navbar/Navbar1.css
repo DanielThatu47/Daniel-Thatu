@@ -109,6 +109,7 @@
   .navbar-nav {
     flex-direction: column; /* Stack links vertically */
      margin:0 auto;
+     align-items: center;
      text-align: center;
      
   }
