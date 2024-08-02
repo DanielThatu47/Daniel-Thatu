@@ -1,7 +1,8 @@
 const CACHE_NAME = 'offline-cache';
 const urlsToCache = [
   '/',
-  '/static/media/demo.12345678.png' // Adjust to the hashed filename in build
+  './src/components/NetworkStatus/demo.png' 
+// Adjust to the hashed filename in build
 ];
 
 self.addEventListener('install', event => {
