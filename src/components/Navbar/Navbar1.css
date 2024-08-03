@@ -106,14 +106,14 @@
     margin-right: auto; /* Push toggler to the right */
   }
 
-  .navbar-nav {
-    flex-direction: column; /* Stack links vertically */
-    margin: 0;
-    text-align: center;
-  }
-
-  .nav-link {
-    padding: 1rem; /* Adjust padding for better touch area */
-    text-align: center;
-  }
+.navbar ul{
+flex-direction: column; 
+align-items: center;
 }
+
+.navbar li{
+
+margin:7px auto;
+}
+
+  
