@@ -83,7 +83,6 @@
   .navbar-collapse {
     flex-direction: column;
     align-items: center;
-    justify-conetent:center;
     display: none;
     width: 100%;
     position: absolute;
@@ -109,16 +108,12 @@
 
   .navbar-nav {
     flex-direction: column; /* Stack links vertically */
-     margin-right:20px;
-     text-align: center;
-     
+    margin: 0;
+    text-align: center;
   }
 
   .nav-link {
     padding: 1rem; /* Adjust padding for better touch area */
     text-align: center;
-    
   }
 }
-
-
