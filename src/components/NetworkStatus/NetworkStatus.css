@@ -27,7 +27,7 @@
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .network-status {
-    padding: 40px;
+    padding: 9px;
   }
 
   .network-status p {
