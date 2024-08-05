@@ -1,6 +1,6 @@
 import React from 'react';
 import { Detector } from 'react-detect-offline';
-import Demo1 from './no_internet.png'; // Adjust the path as needed
+ Adjust the path as needed
 import './NetworkStatus.css'; // Custom styles for the component
 
 const NetworkStatus = ({ children }) => (
@@ -10,7 +10,7 @@ const NetworkStatus = ({ children }) => (
         children
       ) : (
         <div className="network-status">
-          <img src={Demo1} alt="No Internet Connection" />
+          <img src="no_internet.png" alt="No Internet Connection" />
           <p>You are currently offline. Please check your internet connection.</p>
         </div>
       )
