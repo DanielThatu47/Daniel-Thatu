@@ -1,22 +1,21 @@
 import React from 'react';
-import { Detector } from 'react-detect-offline';
-import Demo1 from './demo.png'; 
-// Adjust the path as needed
-import './NetworkStatus.css'; // Custom styles for the component
+import { Online, Offline } from 'react-detect-offline';
+import './NetworkStatus.css';
 
-const NetworkStatus = ({ children }) => (
-  <Detector
-    render={({ online }) => (
-      online ? (
-        children
-      ) : (
-        <div className="network-status">
-          <img src={Demo1} alt="No Internet Connection" />
-          <p>You are currently offline. Please check your internet connection.</p>
+const NetworkStatus = () => {
+  return (
+    <div className="network-status">
+      <Online>
+        <p>You are online</p>
+      </Online>
+      <Offline>
+        <div>
+          <p>You are offline</p>
+          <img src="/no_internet.png" alt="No Internet" />
         </div>
-      )
-    )}
-  />
-);
+      </Offline>
+    </div>
+  );
+};
 
 export default NetworkStatus;
