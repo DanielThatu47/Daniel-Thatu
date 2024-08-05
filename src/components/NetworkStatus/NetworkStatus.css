@@ -1,6 +1,6 @@
 .network-status {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,7 +31,9 @@
   }
 
   .network-status p {
-    font-size: 2em; /* Increased text size */
+    font-size: 2em;
+ /* Increased text size */
+    margin:0 4px;
   }
 
   .network-status img {
