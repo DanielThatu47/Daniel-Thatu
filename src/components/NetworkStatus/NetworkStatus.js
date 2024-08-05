@@ -1,7 +1,8 @@
 import React from 'react';
 import { Detector } from 'react-detect-offline';
- Adjust the path as needed
-import './NetworkStatus.css'; // Custom styles for the component
+ 
+import './NetworkStatus.css'; 
+// Custom styles for the component
 
 const NetworkStatus = ({ children }) => (
   <Detector
