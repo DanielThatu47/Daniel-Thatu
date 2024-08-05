@@ -12,12 +12,11 @@
   justify-content: center;
   color: #fff;
   z-index: 1000;
-  
 }
 
 .network-status p {
   font-size: 1.2em;
-  margin:0 10px;
+  margin: 0 10px;
 }
 
 .network-status img {
@@ -33,11 +32,11 @@
   }
 
   .network-status p {
-    font-size: 1.5em;
+    font-size: 2em; /* Increased text size */
   }
 
   .network-status img {
-    width: 50%;
+    width: 60%; /* Increased image size */
   }
 }
 
