@@ -75,7 +75,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="skill-card" ref={frameworksRef}>
-            <h3 className='frame'>Frameworks</h3>
+            <h3 className='frame'>Frameworks/Libraries</h3>
             <div className="languages">
               <div className="language-item">
               <CIcon icon={cibDjango} fill='white' className='language django-icon' alt="Django" />
