@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
-import Me from './bg.png';
+import Me from './Me.webp';
 import Pdf from './Daniel_Resume.pdf';
 import Preview from './Preview.jpg';
 import CIcon from '@coreui/icons-react';
