@@ -42,7 +42,7 @@ const Education = () => {
           </div>
           <div ref={eduRef} className="education-text">
             <h2>St Francis Institute of Technology</h2>
-            <p>2021 - Present</p>
+            <p>Dec 2021 - May 2025</p>
             <p>B.E (Information Technology)</p>
           </div>
         </div>
